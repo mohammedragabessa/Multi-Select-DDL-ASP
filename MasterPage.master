@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link type="text/css" href="<%=Request.ApplicationPath + "/css/jquery.multiselect.css" %>"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="<%=Request.ApplicationPath+ "/css/jquery-ui.min.css "%>"
+        type="text/css" />
+
+    <script type="text/javascript" src="<%=Request.ApplicationPath %>/js/jquery/jquery-1.4.4.min.js"></script>
+
+    <script type="text/javascript" src="<%=Request.ApplicationPath %>/js/jquery/jquery-ui-1.8.13.custom.min.js"></script>
+
+    <script type="text/javascript" src="<%=Request.ApplicationPath %>/js/jquery.multiselect.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
